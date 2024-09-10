@@ -1,0 +1,169 @@
+{
+  "tags":["race"],
+  "name":"elf",
+  "description":"Created by the god Corellon, the first elves could change their forms at will. They lost this ability when Corellon cursed them for plotting with the deity Lolth, who tried and failed to usurp Corellon’s dominion. When Lolth was cast into the Abyss, most elves renounced her and earned Corellon’s forgiveness, but that which Corellon had taken from them was lost forever.\nNo longer able to shape-shift at will, the elves retreated to the Feywild, where their sorrow was deepened by that plane’s influence. Over time, curiosity led many of them to explore other planes of existence, including worlds in the Material Plane.\nElves have pointed ears and lack facial and body hair. They live for around 750 years, and they don’t sleep but instead enter a trance when they need to rest. In that state, they remain aware of their surroundings while immersing themselves in memories and meditations.\nAn environment subtly transforms elves after they inhabit it for a millennium or more, and it grants them certain kinds of magic. Drow, high elves, and wood elves are examples of elves who have been transformed thus",
+  "creature_type":"humanoid",
+  "size":"medium",
+  "speed":30,
+  "special traits":[
+    {
+      "tags":["special trait","racial trait"],
+      "name":"darkvision",
+      "description":"You have Darkvision with a range of 60 feet.",
+      "ability":"darkvision",
+      "range":50
+    },
+    {
+      "tags":["special trait","racial trait"],
+      "name":"elven lineage",
+      "description":"You are part of a lineage that grants you supernatural abilities. Choose a lineage from the Elven Lineages table. You gain the level 1 benefit of that lineage.\nWhen you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).",
+      "number of choices":1,
+      "options":[
+        {
+          "tags":["lineage"],
+          "name":"drow",
+          "description":"Drow typically dwell in the Underdark and have been shaped by it. Some drow individuals and societies avoid the Underdark altogether yet carry its magic. In the Eberron setting, for example, drow dwell in rainforests and cyclopean ruins on the continent of Xen’drik.",
+          "abilities":[
+            {
+              "tags":["ability", "racial ability"],
+              "description":"The range of your Darkvision increases to 120 feet. ",
+              "ability":"darkvision",
+              "range":120
+            },
+            {
+              "tags":["ability", "racial ability", "innate magic"],
+              "description":"You also know the Dancing Lights cantrip.",
+              "spell":"dancing lights"
+            },
+            {
+              "tags":["ability", "racial ability", "innate magic"],
+              "requirements":[
+                {
+                  "type": "character level",
+                  "value": "3"
+                }
+              ],
+              "description":"Faerie Fire",
+              "spell":"faerie fire"
+            },
+            {
+              "tags":["ability", "racial ability", "innate magic"],
+              "requirements":[
+                {
+                  "tags": "character level",
+                  "value": "5"
+                }
+              ],
+              "description":"Darkness",
+              "spell":"darkness"
+            }
+          ]
+        },
+        {
+          "tags":["lineage"],
+          "name":"high elf",
+          "description":"High elves have been infused with the magic of crossings between the Feywild and the Material Plane. On some worlds, high elves refer to themselves by other names. For example, they call themselves sun or moon elves in the Forgotten Realms setting, Silvanesti and Qualinesti in the Dragonlance setting, and Aereni in the Eberron setting",
+          "abilities":[
+            {
+              "tags":["ability", "racial ability", "innate magic"],
+              "description":"You know the Prestidigitation cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Wizard spell list.",
+              "spell":"prestidigitation"
+            },
+            {
+              "tags":["ability", "racial ability", "innate magic"],
+              "requirements":[
+                {
+                  "type": "character level",
+                  "value": "3"
+                }
+              ],
+              "description":"Detect Magic",
+              "spell":"detect magic"
+            },
+            {
+              "tags":["ability", "racial ability", "innate magic"],
+              "requirements":[
+                {
+                  "type": "character level",
+                  "value": "5"
+                }
+              ],
+              "description":"Misty Step",
+              "spell":"misty step"
+            }
+          ]
+        },
+        {
+          "tags":["lineage"],
+          "name":"wood elf",
+          "description":"Wood elves carry the magic of primeval forests within themselves. They are known by many other names, including wild elves, green elves, and forest elves. Grugach are reclusive wood elves of the Greyhawk setting, while the Kagonesti and the Tairnadal are wood elves of the Dragonlance and Eberron settings, respectively.",
+          "abilities":[
+            {
+              "tags":["ability", "racial ability"],
+              "description":"Your Speed increases to 35 feet"
+            },
+            {
+              "tags":["ability", "racial ability", "innate magic"],
+              "description":"Druidcraft",
+              "spell":"druidcraft"
+            },
+            {
+              "tags":["ability", "racial ability", "innate magic"],
+              "requirements":[
+                {
+                  "type": "character level",
+                  "value": "3"
+                }
+              ],
+              "description":"Long Strider",
+              "spell":"long strider"
+            },
+            {
+              "tags":["ability", "racial ability", "innate magic"],
+              "requirements":[
+                {
+                  "type": "character level",
+                  "value": "5"
+                }
+              ],
+              "description":"Pass without Trace",
+              "spell":"pass without trace"
+            }
+          ]
+        },
+        "high elf",
+        "wood elf"
+      ]
+    },
+    {
+      "tags":["special trait","racial trait"],
+      "name":"fey ancestry",
+      "description":"You have Advantage on saving throws you make to avoid or end the Charmed condition."
+    },
+    {
+      "tags":["special trait","racial trait"],
+      "name":"keen senses",
+      "description":"You have proficiency in the Insight, Perception, or Survival skill.",
+      "number of choices":1,
+      "options":[
+        {
+          "tags":["skill proficiency"],
+          "name":"insight"
+        },
+        {
+          "tags":["skill proficiency"],
+          "name":"perception"
+        },
+        {
+          "tags":["skill proficiency"],
+          "name":"survival"
+        }
+      ]
+    },
+    {
+      "tags":["special trait","racial trait"],
+      "name":"trance",
+      "description":"You don’t need to sleep, and magic can’t put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness."
+    }
+  ]
+}

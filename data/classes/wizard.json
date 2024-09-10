@@ -1,0 +1,194 @@
+{
+  "tags":["class"],
+  "name":["wizard"],
+  "hit die":"d6",
+  "starting traits":[
+    "primary ability":"intelligence",
+    {
+      "tags":["saving throw proficiency"],
+      "attribute":"intelligence"
+    },
+    {
+      "tags":["saving throw proficiency"],
+      "attribute":"wisdom"
+    },
+    {
+      "tags":["weapon proficiency"],
+      "value":"simple weapons"
+    },
+    {
+      "name":"starting equipment",
+      "number of options":1,
+      "options":[
+        [
+          {
+            "tags":["equipment"],
+            "value":"dagger",
+            "quantity":2
+          },
+          {
+            "tags":["equipment"],
+            "value":"arcane focus (quarterstaff)"
+          },
+          {
+            "tags":["equipment"],
+            "value":"Robe"
+          },
+          {
+            "tags":["equipment"],
+            "value":"spellbook"
+          },
+          {
+            "tags":["equipment"],
+            "value":"scholar's pack"
+          }
+        ],
+        {
+          "tags":["equipment"],
+          "value":"GP",
+          "quantity":55
+        }
+      ]
+    }
+  ],
+  "features":[
+    {
+      "tags":["proficiency bonus"],
+      "value":2
+    },
+    {
+      "tags":["cantrips known"],
+      "value":3
+    },
+    {
+      "tags":["prepared spells"],
+      "value":4
+    },
+    {
+      "tags":["spell slots"],
+      "spell list":"wizard",
+      "level":1,
+      "value":2
+    },
+    {
+      "tags":["prepared spells"],
+      "value":1,
+      "requirement":{
+        "type":"class level",
+        "name":"wizard",
+        "value":2
+      }
+    },
+    {
+      "tags":["spell slots"],
+      "spell list":"wizard",
+      "level":1,
+      "value":1,
+      "requirement":{
+        "type":"class level",
+        "name":"wizard",
+        "value":2
+      }
+    },
+    {
+      "tags":["prepared spells"],
+      "value":1,
+      "requirement":{
+        "type":"class level",
+        "name":"wizard",
+        "value":3
+      }
+    },
+    {
+      "tags":["spell slots"],
+      "spell list":"wizard",
+      "level":1,
+      "value":1,
+      "requirement":{
+        "type":"class level",
+        "name":"wizard",
+        "value":3
+      }
+    },
+    {
+      "tags":["spell slots"],
+      "spell list":"wizard",
+      "level":2,
+      "value":2,
+      "requirement":{
+        "type":"class level",
+        "name":"wizard",
+        "value":3
+      }
+    },
+    {
+      "tags":["prepared spells"],
+      "value":1,
+      "requirement":{
+        "type":"class level",
+        "name":"wizard",
+        "value":4
+      }
+    },
+    {
+      "tags":["spell slots"],
+      "spell list":"wizard",
+      "level":2,
+      "value":1,
+      "requirement":{
+        "type":"class level",
+        "name":"wizard",
+        "value":4
+      }
+    },
+    {
+      "tags":["prepared spells"],
+      "value":2,
+      "requirement":{
+        "type":"class level",
+        "name":"wizard",
+        "value":5
+      }
+    },
+    {
+      "tags":["spell slots"],
+      "spell list":"wizard",
+      "level":3,
+      "value":2,
+      "requirement":{
+        "type":"class level",
+        "name":"wizard",
+        "value":5
+      }
+    },
+    {
+      "tags":["proficiency bonus"],
+      "value":1,
+      "requirement":{
+        "type":"class level",
+        "name":"wizard",
+        "value":5
+      }
+    },
+    {
+      "tags":["prepared spells"],
+      "value":1,
+      "requirement":{
+        "type":"class level",
+        "name":"wizard",
+        "value":6
+      }
+    },
+    {
+      "tags":["spell slots"],
+      "spell list":"wizard",
+      "level":3,
+      "value":1,
+      "requirement":{
+        "type":"class level",
+        "name":"wizard",
+        "value":6
+      }
+    },
+  ]
+}
